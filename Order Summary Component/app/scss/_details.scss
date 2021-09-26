@@ -1,0 +1,52 @@
+@import 'functions';
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $internalPadding;
+
+    > p {
+        text-align: center;
+        color: $desaturatedBlue;
+    }
+
+    > h1 {
+        margin: 0;
+        font-size: toRem(30);
+        font-weight: 900;
+    }
+
+    &__pricing {
+        width: 100%;
+        background-color: $veryPaleBlue;
+        border-radius: toRem(10);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        padding: toRem(20);
+
+        &__plan {
+            display: flex;
+            flex-direction: column;
+
+            > span:first-child {
+                font-weight: 700;
+            }
+            > span:last-child {
+                color: $desaturatedBlue;
+            }
+        }
+
+        &__change {
+            grid-column: 4;
+            color: $brightBlue;
+            font-weight: 700;
+            text-decoration: underline;
+
+            &:hover {
+                color: $lightPurple;
+            }
+        }
+    }
+}

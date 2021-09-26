@@ -1,0 +1,30 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 16;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$lightPurple: hsl(245, 83%, 68%);
+$white: hsl(0, 0, 100%);
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$cardBorderRadius: toRem(20);
+$internalPadding: toRem(50);

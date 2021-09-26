@@ -1,0 +1,29 @@
+@import 'functions';
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(25);
+
+    padding: 0 $internalPadding;
+
+    &__payment {
+        color: $white;
+        background-color: $brightBlue;
+        border-radius: toRem(10);
+
+        &:hover {
+            background-color: $lightPurple;
+        }
+
+        filter: drop-shadow(toRem(-5) toRem(30) toRem(10) $paleBlue);
+    }
+
+    &__cancel {
+        color: $desaturatedBlue;
+
+        &:hover {
+            color: $darkBlue;
+        }
+    }
+}

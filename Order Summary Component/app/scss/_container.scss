@@ -1,0 +1,19 @@
+@import 'functions';
+
+.container {
+    height: 77%;
+    width: 87%;
+    max-width: toRem(450);
+    background-color: $white;
+    margin: 0 auto;
+    display: black;
+    border-radius: $cardBorderRadius;
+}
+
+.header__image {
+    height: toRem(220);
+    border-top-left-radius: $cardBorderRadius;
+    border-top-right-radius: $cardBorderRadius;
+    background: url('/images/illustration-hero.svg');
+    background-position: left top;
+}

@@ -1,0 +1,10 @@
+.background {
+    height: 100vh;
+    background-image: url('/images//pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $paleBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
