@@ -1,0 +1,30 @@
+@import 'functions';
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    font-size: toRem($fontSize);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $mainTransparentWhite;
+    background-color: $veryDarkBlue;
+    height: 100%;
+    width: 100%;
+}
