@@ -1,0 +1,36 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 15;
+$primaryFont: 'Lexend Deca', sans-serif;
+$secondaryFont: 'Big Shoulders Display', cursive;
+
+// Font Weights
+$regular: 400;
+$bold: 700;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75); // Paragraphs
+$veryLightGray: hsl(0, 0%, 95%); // Background, headings, buttons
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);
+
+$cardBorderRadius: toRem(10);
