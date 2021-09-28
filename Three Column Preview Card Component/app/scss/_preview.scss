@@ -1,0 +1,83 @@
+@import 'functions';
+
+.preview-card {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $mobileWidth) {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+.container {
+    display: block;
+    width: $cardWidth;
+    margin: toRem(20);
+    border-radius: $cardBorderRadius;
+    overflow: hidden;
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+}
+
+.preview {
+    padding: toRem(50);
+    max-width: $cardWidth;
+    min-width: $cardWidth;
+
+    > p {
+        color: $transparentWhite;
+    }
+
+    &__header {
+        font-family: $secondaryFont;
+        text-transform: uppercase;
+        font-size: toRem(32);
+    }
+
+    &__cta {
+        height: $buttonHeight;
+        width: $buttonWidth;
+        text-align: center;
+        border: toRem(2) solid $transparentWhite;
+        border-radius: toRem(40);
+        background-color: $veryLightGray;
+
+        &:hover {
+            color: $transparentWhite;
+            background-color: transparent;
+            transition: 300ms ease-in-out;
+        }
+    }
+}
+
+.sedans {
+    background-color: $brightOrange;
+
+    > button {
+        color: $brightOrange;
+    }
+}
+
+.suvs {
+    background-color: $darkCyan;
+
+    > button {
+        color: $darkCyan;
+    }
+}
+
+.luxury {
+    background-color: $veryDarkCyan;
+
+    > button {
+        color: $veryDarkCyan;
+    }
+}

@@ -21,10 +21,26 @@ body {
     padding: 0;
     font-family: $primaryFont;
     font-size: toRem($fontSize);
-    line-height: 1.5;
+    line-height: 1.7;
     font-weight: $regular;
     color: $transparentWhite;
+    text-align: left;
     background-color: $veryLightGray;
     height: 100%;
     width: 100%;
+}
+
+// Remove all native button styles
+button,
+input[type='submit'],
+input[type='reset'] {
+    cursor: pointer;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-weight: $regular;
 }
