@@ -1,0 +1,29 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 15;
+$primaryFont: 'Open Sans', sans-serif;
+
+/* Font Weights */
+$default: 400;
+$bold: 700;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+$white: #fff;
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);
