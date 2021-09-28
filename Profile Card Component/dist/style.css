@@ -1,0 +1,174 @@
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+/* Font Weights */
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+/* Remove default button styles */
+button,
+input[type='submit'],
+input[type='reset'] {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #19a2ae;
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-position: -150% -26.875rem, 31.25rem 31.25rem;
+  background-repeat: no-repeat, no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__header-img {
+  width: auto;
+  height: 8.75rem;
+  background: url("/images/bg-pattern-card.svg") no-repeat;
+}
+
+.profile__icon {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  margin: -3rem 0 0 7.375rem;
+  border-radius: 100%;
+  border: 0.25rem solid #fff;
+}
+
+.profile__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4.8125rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #969696;
+}
+
+.profile__contents div {
+  margin: 0;
+  font-size: 18;
+}
+
+.profile__contents__identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+}
+
+.profile__statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.profile__statistics h4 {
+  margin: 0;
+}
+
+.profile-card {
+  width: 21.875rem;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.stat > span {
+  color: #969696;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+}
+
+#name {
+  font-weight: 700;
+}
+
+#age {
+  color: #969696;
+}
+
+#location {
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */

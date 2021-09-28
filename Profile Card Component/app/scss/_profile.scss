@@ -1,0 +1,92 @@
+@import 'functions';
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: $darkCyan;
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-position: -150% toRem(-430), toRem(500) toRem(500);
+    background-repeat: no-repeat, no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    &__header-img {
+        width: auto;
+        height: toRem(140);
+        background: url('/images/bg-pattern-card.svg') no-repeat;
+    }
+
+    &__icon {
+        position: absolute;
+        width: toRem(96);
+        height: toRem(96);
+        margin: toRem(-48) 0 0 toRem(118); // img width / 2 + card width / 2
+        border-radius: 100%;
+        border: toRem(4) solid $white;
+    }
+
+    &__contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: toRem(77);
+        padding-bottom: toRem(28);
+        border-bottom: 1px solid $darkGray;
+
+        div {
+            margin: 0;
+            font-size: $fontSize;
+        }
+
+        &__identity {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: toRem(10);
+        }
+    }
+
+    &__statistics {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: toRem(28);
+        text-align: center;
+
+        h4 {
+            margin: 0;
+        }
+    }
+}
+
+.profile-card {
+    width: toRem(350);
+    background-color: $white;
+    border-radius: $cardBorderRadius;
+    overflow: hidden;
+}
+
+.stat {
+    > span {
+        color: $darkGray;
+        font-size: toRem(12);
+        letter-spacing: toRem(2);
+    }
+}
+
+#name {
+    font-weight: $bold;
+}
+
+#age {
+    color: $darkGray;
+}
+
+#location {
+    color: $darkGray;
+}
