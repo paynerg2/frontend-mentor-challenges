@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-card {
+    width: $mobileWidth;
+    display: flex;
+    flex-direction: column;
+    background-color: $darkDesaturatedBlue;
+    border-radius: $cardBorderRadius;
+
+    @media (min-width: $mobileWidth) {
+        flex-direction: row;
+        flex-direction: row-reverse;
+
+        width: toRem(1110);
+        height: toRem(450);
+    }
+}

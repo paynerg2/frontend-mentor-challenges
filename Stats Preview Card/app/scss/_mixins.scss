@@ -1,0 +1,10 @@
+// 375px, 1440px
+$breakpoints-up: (
+    'mobile': $mobileWidth,
+);
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

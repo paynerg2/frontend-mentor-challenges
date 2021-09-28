@@ -1,0 +1,52 @@
+.content {
+    padding: toRem(26) toRem(55);
+    text-align: center;
+
+    @media (min-width: $mobileWidth) {
+        padding-right: toRem(120);
+        padding-left: toRem(70);
+        text-align: left;
+    }
+}
+
+.main {
+    > h1 {
+        font-size: 1.86em;
+    }
+
+    > p {
+        line-height: 1.7rem;
+        color: $statHeadingsTransparentWhite;
+        margin: toRem(20) 0;
+    }
+}
+
+#insight {
+    color: $softViolet;
+}
+
+.stats {
+    &__figure {
+        margin: 0;
+        margin-top: toRem(20);
+        font-size: 1.3em;
+    }
+
+    &__item {
+        color: $statHeadingsTransparentWhite;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 0.67em;
+    }
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: toRem(60);
+        text-align: left;
+        margin-top: toRem(80);
+    }
+}

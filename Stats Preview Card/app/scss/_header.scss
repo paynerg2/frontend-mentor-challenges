@@ -1,0 +1,43 @@
+.header {
+    background: url('/images/image-header-desktop.jpg') no-repeat;
+    background-size: 100%;
+    height: toRem(240);
+    border-top-left-radius: $cardBorderRadius;
+    border-top-right-radius: $cardBorderRadius;
+
+    @media (min-width: $mobileWidth) {
+        background: url('/images/image-header-mobile.jpg') no-repeat;
+        height: toRem(450);
+        width: toRem(540);
+        border-top-right-radius: $cardBorderRadius;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $cardBorderRadius;
+    }
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: toRem(240);
+    width: auto;
+    background: $softViolet;
+    border-top-left-radius: $cardBorderRadius;
+    border-top-right-radius: $cardBorderRadius;
+    opacity: 0.5;
+    filter: saturate(118%);
+    z-index: 999;
+
+    @media (min-width: $mobileWidth) {
+        height: toRem(450);
+        width: toRem(540);
+        border-top-right-radius: $cardBorderRadius;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: $cardBorderRadius;
+    }
+}
