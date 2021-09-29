@@ -1,0 +1,14 @@
+.claim {
+    text-align: center;
+
+    h1 {
+        font-size: toRem(32);
+        font-weight: $bold;
+        color: $veryDarkMagenta;
+    }
+
+    p {
+        font-weight: $medium;
+        color: $darkGrayishMagenta;
+    }
+}
