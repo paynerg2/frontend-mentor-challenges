@@ -1,12 +1,13 @@
 /* Adapted from W3 Schools */
 console.log('Hello world');
 
-var acc = document.getElementsByClassName('accordion');
+var accordions = document.getElementsByClassName('accordion');
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function () {
+for (i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener('click', function () {
         /* Toggle between adding and removing the "active" class,
       to highlight the button that controls the panel */
+        clearActiveStates();
         this.classList.toggle('active');
 
         /* Toggle between hiding and showing the active panel */
@@ -17,4 +18,16 @@ for (i = 0; i < acc.length; i++) {
             panel.style.display = 'block';
         }
     });
+}
+
+function clearActiveStates() {
+    for (i = 0; i < accordions.length; i++) {
+        const acc = accordions[i];
+        acc.classList.remove('active');
+        hidePanel(acc);
+    }
+}
+
+function hidePanel(accordion) {
+    accordion.nextElementSibling.style.display = 'none';
 }
