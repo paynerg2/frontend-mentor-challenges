@@ -3,16 +3,31 @@
     background-color: $white;
     border-radius: $cardBorderRadius;
     padding: $cardPadding;
+    padding-top: toRem(60);
     width: toRem(280);
     height: toRem(535);
     text-align: center;
+    position: relative;
 
     h1 {
         font-size: toRem(24);
-        margin-top: toRem(80);
+    }
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: toRem(510);
+        width: toRem(920);
+        padding: $cardPaddingDesktop;
+        overflow: hidden;
+
+        h1 {
+            text-align: left;
+            margin-top: 0;
+        }
     }
 }
-
 /* Accordion element styles */
 .accordion {
     display: flex;
@@ -25,6 +40,11 @@
         &:hover {
             color: $softRed;
         }
+    }
+
+    @media (min-width: $mobileWidth) {
+        width: toRem(350);
+        max-width: toRem(350);
     }
 }
 
@@ -43,4 +63,9 @@
     text-align: left;
     color: $darkGrayishBlue;
     display: none;
+    height: auto;
+
+    > p {
+        max-width: toRem(350);
+    }
 }

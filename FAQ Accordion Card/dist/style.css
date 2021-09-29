@@ -92,14 +92,38 @@ h1 {
   background-color: #fff;
   border-radius: 1.25rem;
   padding: 1.25rem;
+  padding-top: 3.75rem;
   width: 17.5rem;
   height: 33.4375rem;
   text-align: center;
+  position: relative;
 }
 
 .faq h1 {
   font-size: 1.5rem;
-  margin-top: 5rem;
+}
+
+@media (min-width: 23.4375rem) {
+  .faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 31.875rem;
+    width: 57.5rem;
+    padding: 5.9375rem;
+    overflow: hidden;
+  }
+  .faq h1 {
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
 /* Accordion element styles */
@@ -128,6 +152,13 @@ h1 {
   color: #f47c57;
 }
 
+@media (min-width: 23.4375rem) {
+  .accordion {
+    width: 21.875rem;
+    max-width: 21.875rem;
+  }
+}
+
 .accordion.active > button {
   font-weight: 700;
 }
@@ -143,15 +174,56 @@ h1 {
   text-align: left;
   color: #787887;
   display: none;
+  height: auto;
+}
+
+.panel > p {
+  max-width: 21.875rem;
 }
 
 .illustration {
   background-image: url("/images/illustration-woman-online-mobile.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 14.625rem;
+  width: 14.625rem;
   position: absolute;
-  top: 7.5rem;
+  top: -5.9375rem;
+  left: 0rem;
+  pointer-events: none;
+}
+
+.illustration__shadow {
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 14.625rem;
+  width: 13.4375rem;
+  position: absolute;
+  top: -0.3125rem;
+  left: 1.25rem;
+  pointer-events: none;
+}
+
+@media (min-width: 23.4375rem) {
+  .illustration {
+    background-image: url("/images/illustration-woman-online-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25.625rem;
+    width: 25.625rem;
+    top: 5.625rem;
+    left: -4.375rem;
+    z-index: 1000;
+  }
+  .illustration__shadow {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50rem;
+    width: 62.5rem;
+    left: -29.375rem;
+    top: -12.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

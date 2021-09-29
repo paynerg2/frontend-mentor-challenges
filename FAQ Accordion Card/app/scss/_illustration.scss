@@ -1,0 +1,49 @@
+.illustration {
+    background-image: url('/images/illustration-woman-online-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: toRem(234);
+    width: toRem(234);
+    position: absolute;
+    top: toRem(-95);
+    left: toRem(0);
+    pointer-events: none;
+
+    &__shadow {
+        background-image: url('/images/bg-pattern-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: toRem(234);
+        width: toRem(215);
+        position: absolute;
+        top: toRem(-5);
+        left: toRem(20);
+        pointer-events: none;
+    }
+
+    @media (min-width: $mobileWidth) {
+        background-image: url('/images/illustration-woman-online-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        height: toRem(410);
+        width: toRem(410);
+
+        top: toRem(90);
+        left: toRem(-70);
+
+        z-index: 1000;
+
+        &__shadow {
+            background-image: url('/images/bg-pattern-desktop.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: toRem(800);
+            width: toRem(1000);
+
+            left: toRem(-470);
+            top: toRem(-200);
+        }
+    }
+}

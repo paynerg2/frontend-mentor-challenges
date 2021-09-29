@@ -31,9 +31,7 @@ function toggleActive(x) {
 
 function clearOtherActiveStates(name) {
     for (i = 0; i < accordions.length; i++) {
-        console.log(accordions[i].getAttribute('name'));
         var currentElementName = accordions[i].getAttribute('name');
-        console.log(currentElementName === name);
         if (accordions[i].getAttribute('name') !== name) {
             accordions[i].classList.remove('active');
             hidePanel(accordions[i]);
