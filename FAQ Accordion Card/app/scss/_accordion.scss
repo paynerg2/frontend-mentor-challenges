@@ -1,0 +1,46 @@
+/* Card container */
+.faq {
+    background-color: $white;
+    border-radius: $cardBorderRadius;
+    padding: $cardPadding;
+    width: toRem(280);
+    min-height: toRem(535);
+    text-align: center;
+
+    h1 {
+        font-size: toRem(24);
+        margin-top: toRem(80);
+    }
+}
+
+/* Accordion element styles */
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__button {
+        color: $veryDarkDesaturatedBlue;
+        text-align: left;
+        &:hover {
+            color: $softRed;
+        }
+    }
+}
+
+.accordion.active {
+    > button {
+        font-weight: $bold;
+    }
+
+    > img {
+        transform: rotate(180deg);
+        transition: 200ms ease-in-out;
+    }
+}
+
+.panel {
+    text-align: left;
+    color: $darkGrayishBlue;
+    display: none;
+}

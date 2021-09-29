@@ -1,0 +1,157 @@
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+/* Font Weights */
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+}
+
+/* Remove default button styles */
+button,
+input[type='submit'],
+input[type='reset'] {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+hr {
+  border-color: #e7e7e9;
+  opacity: 0.5;
+  margin: 1.125rem 0;
+}
+
+h1 {
+  color: #1d1e35;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), color-stop(75%), to(#6565e7));
+  background: linear-gradient(#af67e9, 75%, #6565e7);
+}
+
+/* Card container */
+.faq {
+  background-color: #fff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 17.5rem;
+  min-height: 33.4375rem;
+  text-align: center;
+}
+
+.faq h1 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+/* Accordion element styles */
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion__button {
+  color: #1d1e35;
+  text-align: left;
+}
+
+.accordion__button:hover {
+  color: #f47c57;
+}
+
+.accordion.active > button {
+  font-weight: 700;
+}
+
+.accordion.active > img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.panel {
+  text-align: left;
+  color: #787887;
+  display: none;
+}
+
+.illustration {
+  background-image: url("/images/illustration-woman-online-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 7.5rem;
+}
+/*# sourceMappingURL=style.css.map */
