@@ -1,6 +1,11 @@
 .ratings {
     margin-top: toRem(45);
     margin-bottom: toRem(45);
+
+    @media (min-width: $mobileWidth) {
+        margin: 0;
+    }
+
     &__example {
         box-sizing: border-box;
         height: toRem(78);
@@ -17,5 +22,21 @@
 
         font-weight: $bold;
         color: $veryDarkMagenta;
+
+        @media (min-width: $mobileWidth) {
+            width: toRem(440);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            &.second {
+                margin-left: toRem(50);
+            }
+
+            &.third {
+                margin-left: toRem(100);
+            }
+        }
     }
 }

@@ -12,8 +12,38 @@
         url('/images/bg-pattern-bottom-mobile.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
+
+    @media (min-width: $mobileWidth) {
+        background-image: url('/images/bg-pattern-top-desktop.svg'),
+            url('/images/bg-pattern-bottom-desktop.svg');
+    }
 }
 
 .social-proof {
     padding: $sectionPadding;
+
+    &__top {
+        @media (min-width: $mobileWidth) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            column-gap: 100px;
+
+            margin-bottom: toRem(75);
+        }
+    }
+
+    &__bottom {
+        @media (min-width: $mobileWidth) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            height: toRem(300);
+        }
+    }
+
+    @media (min-width: $mobileWidth) {
+        padding: $sectionPaddingDesktop-vertical $sectionPaddingDesktop-horizontal;
+    }
 }

@@ -5,10 +5,24 @@
         font-size: toRem(32);
         font-weight: $bold;
         color: $veryDarkMagenta;
+
+        @media (min-width: $mobileWidth) {
+            font-size: toRem(46);
+            margin: 0;
+        }
     }
 
     p {
         font-weight: $medium;
         color: $darkGrayishMagenta;
+
+        @media (min-width: $mobileWidth) {
+            margin: 0;
+        }
+    }
+
+    @media (min-width: $mobileWidth) {
+        text-align: left;
+        width: toRem(500);
     }
 }

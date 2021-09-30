@@ -67,8 +67,54 @@ body {
   background-position: top left, bottom right;
 }
 
+@media (min-width: 23.4375rem) {
+  .container {
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+  }
+}
+
 .social-proof {
   padding: 1.5rem;
+}
+
+@media (min-width: 23.4375rem) {
+  .social-proof__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
+    margin-bottom: 4.6875rem;
+  }
+}
+
+@media (min-width: 23.4375rem) {
+  .social-proof__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 18.75rem;
+  }
+}
+
+@media (min-width: 23.4375rem) {
+  .social-proof {
+    padding: 8.125rem 10rem;
+  }
 }
 
 .claim {
@@ -81,14 +127,40 @@ body {
   color: #502050;
 }
 
+@media (min-width: 23.4375rem) {
+  .claim h1 {
+    font-size: 2.875rem;
+    margin: 0;
+  }
+}
+
 .claim p {
   font-weight: 500;
   color: #937b92;
 }
 
+@media (min-width: 23.4375rem) {
+  .claim p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 23.4375rem) {
+  .claim {
+    text-align: left;
+    width: 31.25rem;
+  }
+}
+
 .ratings {
   margin-top: 2.8125rem;
   margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 23.4375rem) {
+  .ratings {
+    margin: 0;
+  }
 }
 
 .ratings__example {
@@ -116,6 +188,28 @@ body {
   color: #502050;
 }
 
+@media (min-width: 23.4375rem) {
+  .ratings__example {
+    width: 27.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .ratings__example.second {
+    margin-left: 3.125rem;
+  }
+  .ratings__example.third {
+    margin-left: 6.25rem;
+  }
+}
+
 .testimonials {
   background-color: #502050;
   border-radius: 0.625rem;
@@ -140,6 +234,19 @@ body {
 
 .testimonials__quote {
   color: #f7f2f7;
+}
+
+@media (min-width: 23.4375rem) {
+  .testimonials {
+    width: 21.875rem;
+    height: 14.6875rem;
+  }
+  .testimonials.second {
+    margin-top: 1.875rem;
+  }
+  .testimonials.third {
+    margin-top: 3.75rem;
+  }
 }
 
 .customer-details {
