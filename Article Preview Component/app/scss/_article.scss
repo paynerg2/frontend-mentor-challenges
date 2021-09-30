@@ -1,0 +1,49 @@
+.article-preview {
+    width: toRem(325);
+    background-color: $white;
+
+    border-radius: $cardBorderRadius;
+    overflow: hidden;
+}
+
+.content {
+    padding: $cardPadding;
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__credit {
+        padding-left: toRem(55);
+        color: $grayishBlue;
+        position: relative;
+    }
+
+    &__credit::before {
+        content: '';
+        position: absolute;
+        background: url('/images/avatar-michelle.jpg') no-repeat;
+        background-size: cover;
+        height: toRem(39);
+        width: toRem(39);
+        border-radius: 100%;
+        left: 0;
+    }
+
+    &__name {
+        font-weight: $bold;
+        color: $veryDarkGrayishBlue;
+    }
+}
+
+.share-icon {
+    background: url('/images/icon-share.svg') no-repeat;
+    background-size: 50%;
+    background-position: center;
+    height: toRem(32);
+    width: toRem(32);
+    border-radius: 100%;
+    background-color: $lightGrayishBlue;
+}
