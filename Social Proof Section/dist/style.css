@@ -98,6 +98,7 @@ body {
   width: 100%;
   margin-top: 0.9375rem;
   background-color: #f7f2f7;
+  border-radius: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,5 +114,89 @@ body {
           align-items: center;
   font-weight: 700;
   color: #502050;
+}
+
+.testimonials {
+  background-color: #502050;
+  border-radius: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.875rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  position: relative;
+}
+
+.testimonials__quote {
+  color: #f7f2f7;
+}
+
+.customer-details {
+  position: relative;
+}
+
+.customer-details__name {
+  color: #fff;
+  font-weight: 500;
+}
+
+.customer-details__verified {
+  color: #ee68a4;
+}
+
+#colton::before {
+  content: '';
+  background-image: url("/images/image-colton.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: 30px;
+  position: absolute;
+  left: 1.875rem;
+  top: 1.875rem;
+}
+
+#irene::before {
+  content: '';
+  background-image: url("/images/image-irene.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: 30px;
+  position: absolute;
+  left: 1.875rem;
+  top: 1.875rem;
+}
+
+#anne::before {
+  content: '';
+  background-image: url("/images/image-anne.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  margin-right: 30px;
+  position: absolute;
+  left: 1.875rem;
+  top: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */

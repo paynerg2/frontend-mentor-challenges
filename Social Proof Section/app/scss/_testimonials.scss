@@ -1,0 +1,75 @@
+.testimonials {
+    background-color: $veryDarkMagenta;
+    border-radius: $itemBorderRadius;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: toRem(30);
+    margin-top: toRem(15);
+    margin-bottom: toRem(15);
+    position: relative;
+
+    &__quote {
+        color: $lightGrayishMagenta;
+    }
+}
+
+.customer-details {
+    position: relative;
+    &__name {
+        color: $white;
+        font-weight: $medium;
+    }
+
+    &__verified {
+        color: $softPink;
+    }
+}
+
+#colton::before {
+    content: '';
+    background-image: url('/images/image-colton.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: toRem(40);
+    width: toRem(40);
+    border-radius: 100%;
+    margin-right: 30px;
+    position: absolute;
+    left: toRem(30);
+    top: toRem(30);
+}
+
+#irene::before {
+    content: '';
+    background-image: url('/images/image-irene.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: toRem(40);
+    width: toRem(40);
+    border-radius: 100%;
+    margin-right: 30px;
+    position: absolute;
+    left: toRem(30);
+    top: toRem(30);
+}
+
+#anne::before {
+    content: '';
+    background-image: url('/images/image-anne.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: toRem(40);
+    width: toRem(40);
+    border-radius: 100%;
+    margin-right: 30px;
+    position: absolute;
+    left: toRem(30);
+    top: toRem(30);
+}
