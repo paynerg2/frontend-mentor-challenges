@@ -1,0 +1,51 @@
+.share {
+    &__icon {
+        background: url('/images/icon-share.svg') no-repeat;
+        background-size: 50%;
+        background-position: center;
+        height: toRem(32);
+        width: toRem(32);
+        border-radius: 100%;
+        background-color: $lightGrayishBlue;
+        z-index: 1000;
+
+        &__overlay {
+            background: url('/images/icon-share-overlay.svg') no-repeat;
+            background-size: 50%;
+            background-position: center;
+            height: toRem(32);
+            width: toRem(32);
+            border-radius: 100%;
+            background-color: $lightGrayishBlue;
+            z-index: 1000;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: toRem(-30);
+        left: toRem(-30);
+        height: 0;
+        width: toRem(330);
+        background-color: $desaturatedDarkBlue;
+
+        > p {
+            color: $grayishBlue;
+            text-transform: uppercase;
+            letter-spacing: toRem(3);
+        }
+
+        &.active {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            height: toRem(64);
+        }
+
+        > button {
+            background-color: $grayishBlue;
+        }
+    }
+}

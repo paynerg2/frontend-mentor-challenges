@@ -1,5 +1,5 @@
 .article-preview {
-    width: toRem(325);
+    width: $cardWidthMobile;
     background-color: $white;
 
     border-radius: $cardBorderRadius;
@@ -9,10 +9,17 @@
 .content {
     padding: $cardPadding;
 
+    &__main {
+        margin: toRem(5);
+    }
+
     &__footer {
+        position: relative;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        margin-top: toRem(40);
     }
 
     &__credit {
@@ -36,14 +43,4 @@
         font-weight: $bold;
         color: $veryDarkGrayishBlue;
     }
-}
-
-.share-icon {
-    background: url('/images/icon-share.svg') no-repeat;
-    background-size: 50%;
-    background-position: center;
-    height: toRem(32);
-    width: toRem(32);
-    border-radius: 100%;
-    background-color: $lightGrayishBlue;
 }

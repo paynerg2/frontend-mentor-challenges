@@ -86,10 +86,15 @@ input[type='reset'] {
 }
 
 .content {
-  padding: 1.875rem;
+  padding: 1.5625rem;
+}
+
+.content__main {
+  margin: 0.3125rem;
 }
 
 .content__footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +105,7 @@ input[type='reset'] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 2.5rem;
 }
 
 .content__credit {
@@ -124,7 +130,13 @@ input[type='reset'] {
   color: #48556a;
 }
 
-.share-icon {
+.header-img {
+  height: 12.5rem;
+  background: url("/images/drawers.jpg") no-repeat;
+  background-size: cover;
+}
+
+.share__icon {
   background: url("/images/icon-share.svg") no-repeat;
   background-size: 50%;
   background-position: center;
@@ -132,11 +144,53 @@ input[type='reset'] {
   width: 2rem;
   border-radius: 100%;
   background-color: #ecf2f8;
+  z-index: 1000;
 }
 
-.header-img {
-  height: 12.5rem;
-  background: url("/images/drawers.jpg") no-repeat;
-  background-size: cover;
+.share__icon__overlay {
+  background: url("/images/icon-share-overlay.svg") no-repeat;
+  background-size: 50%;
+  background-position: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  background-color: #ecf2f8;
+  z-index: 1000;
+}
+
+.share__overlay {
+  position: absolute;
+  bottom: -1.875rem;
+  left: -1.875rem;
+  height: 0;
+  width: 20.625rem;
+  background-color: #6d7f97;
+}
+
+.share__overlay > p {
+  color: #9eafc2;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.share__overlay.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+}
+
+.share__overlay > button {
+  background-color: #9eafc2;
 }
 /*# sourceMappingURL=style.css.map */
