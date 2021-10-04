@@ -1,6 +1,13 @@
 .header-img {
     height: toRem(200);
+    width: 100%;
 
     background: url('/images/drawers.jpg') no-repeat;
     background-size: cover;
+
+    @media (min-width: $mobileWidth) {
+        height: auto;
+        width: toRem(660);
+        background-size: fill;
+    }
 }

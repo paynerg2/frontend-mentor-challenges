@@ -4,6 +4,13 @@
 
     border-radius: $cardBorderRadius;
     overflow: hidden;
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+
+        width: 600px;
+    }
 }
 
 .content {
