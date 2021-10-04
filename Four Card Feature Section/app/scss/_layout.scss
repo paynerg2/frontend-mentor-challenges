@@ -1,0 +1,29 @@
+.container {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: toRem(30);
+
+    @media (min-width: $mobileWidth) {
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $mobileWidth) {
+        display: grid;
+        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

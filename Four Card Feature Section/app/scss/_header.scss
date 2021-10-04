@@ -1,0 +1,23 @@
+.defaultWeight {
+    font-weight: $default;
+}
+
+.header {
+    width: fit-content;
+
+    max-width: toRem(520);
+    margin: 0 auto;
+    margin-top: toRem(85);
+    text-align: center;
+    h2 {
+        margin-top: 0;
+        font-size: toRem(25);
+    }
+    h2:first-of-type {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $mobileWidth) {
+        margin-top: 0;
+    }
+}
