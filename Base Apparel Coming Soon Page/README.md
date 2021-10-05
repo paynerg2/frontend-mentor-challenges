@@ -10,8 +10,8 @@ This is a solution to the [Base Apparel Coming Soon Page](https://www.frontendme
 
 ### Screenshot
 
-![Mobile Screenshot](./images/mobile_screenshot.jpg)
-![Desktop Screenshot](./images/desktop_screenshot.jpg)
+![Mobile Screenshot](./images/mobile_screenshot.jpg?raw=true)
+![Desktop Screenshot](./images/desktop_screenshot.jpg?raw=true)
 
 ## My process
 
