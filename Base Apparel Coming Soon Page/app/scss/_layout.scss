@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background: $backgroundGradient;
+
+    @media (min-width: $mobileWidth) {
+        background: url('/images/bg-pattern-desktop.svg') no-repeat;
+        background-size: 100%;
+    }
+}
+
+.layout {
+    display: grid;
+    width: 100%;
+
+    grid-template-areas:
+        'logo'
+        'hero'
+        'main'
+        'contact';
+    grid-template-columns: 1fr;
+}
