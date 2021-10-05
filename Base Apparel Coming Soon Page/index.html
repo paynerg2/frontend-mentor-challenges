@@ -42,12 +42,23 @@
                     <!-- ------------- -->
                     <!--    Contact    -->
                     <!-- ------------- -->
-                    <input type="text" placeholder="Email Address" />
-                    <button type="submit">
-                        <img src="/images/icon-arrow.svg" alt="submit" />
-                    </button>
+                    <form class="submit">
+                        <input
+                            id="email_address"
+                            class="submit__input"
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                        <img class="icon-error hidden" src="/images/icon-error.svg" alt="error" />
+                        <button type="submit" class="submit__button">
+                            <img src="/images/icon-arrow.svg" alt="submit" />
+                        </button>
+                    </form>
+                    <span class="error-message"></span>
                 </div>
             </div>
         </main>
     </body>
+
+    <script src="/app/js/script.js"></script>
 </html>
