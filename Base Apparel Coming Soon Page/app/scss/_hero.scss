@@ -8,7 +8,7 @@
 
     @media (min-width: $mobileWidth) {
         background: url('/images/hero-desktop.jpg') no-repeat;
-        background-size: cover;
+        background-size: contain;
         height: 100vh;
     }
 }

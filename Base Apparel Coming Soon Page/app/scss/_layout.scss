@@ -31,7 +31,7 @@
             'logo hero'
             'main hero';
 
-        grid-template-columns: 68% 42%;
+        grid-template-columns: auto toRem(610);
         grid-template-rows: 200px auto;
     }
 }
