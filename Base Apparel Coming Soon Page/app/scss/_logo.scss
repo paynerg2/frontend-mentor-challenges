@@ -1,3 +1,9 @@
 .logo {
     padding: toRem(30);
+    grid-area: 'logo';
+
+    @media (min-width: $mobileWidth) {
+        padding-top: toRem(60);
+        padding-left: toRem(165);
+    }
 }

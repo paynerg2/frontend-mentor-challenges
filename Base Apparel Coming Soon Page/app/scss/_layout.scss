@@ -6,6 +6,8 @@
     @media (min-width: $mobileWidth) {
         background: url('/images/bg-pattern-desktop.svg') no-repeat;
         background-size: 100%;
+        height: 100vh;
+        width: 100vw;
     }
 }
 
@@ -19,4 +21,17 @@
         'main'
         'contact';
     grid-template-columns: 1fr;
+
+    @media (min-width: $mobileWidth) {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+
+        grid-template-areas:
+            'logo hero'
+            'main hero';
+
+        grid-template-columns: 68% 42%;
+        grid-template-rows: 200px auto;
+    }
 }

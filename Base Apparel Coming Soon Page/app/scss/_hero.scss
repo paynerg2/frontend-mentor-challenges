@@ -3,4 +3,12 @@
     background-size: cover;
     height: toRem(250);
     width: 100%;
+
+    grid-area: 'hero';
+
+    @media (min-width: $mobileWidth) {
+        background: url('/images/hero-desktop.jpg') no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 }
