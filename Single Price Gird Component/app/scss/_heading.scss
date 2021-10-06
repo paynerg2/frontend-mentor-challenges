@@ -1,0 +1,12 @@
+#heading {
+    background-color: $white;
+    padding: $padding;
+    h2 {
+        color: $brightYellow;
+        font-size: toRem(18);
+    }
+
+    p {
+        line-height: 2;
+    }
+}

@@ -1,0 +1,43 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 16;
+$primaryFont: 'Karla', sans-serif;
+
+/* Font Weights */
+$default: 400;
+$bold: 700;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+
+// Primary
+$cyan: hsl(179, 62%, 43%);
+$lightCyan: hsl(179, 62%, 53%);
+$brightYellow: hsl(71, 73%, 54%);
+
+// Neutral
+$white: #fff;
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+// Shadows
+$darkCyan: hsl(179, 62%, 38%);
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);
+$componentBorderRadius: toRem(5);
+$padding: toRem(25);

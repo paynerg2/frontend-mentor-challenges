@@ -1,0 +1,21 @@
+#features {
+    background-color: $lightCyan;
+    color: $lightGray;
+
+    padding: $padding;
+
+    h2 {
+        color: $white;
+        margin: 0;
+        margin-bottom: toRem(10);
+    }
+}
+
+.features {
+    &__list {
+        text-align: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}

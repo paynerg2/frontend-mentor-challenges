@@ -1,0 +1,34 @@
+#cta {
+    color: $white;
+    background-color: $cyan;
+
+    padding: $padding;
+
+    h2 {
+        margin: 0;
+        font-weight: $default;
+    }
+
+    h3 {
+        #cost {
+            color: $white;
+            font-size: toRem(32);
+            font-weight: $bold;
+            margin-right: toRem(5);
+        }
+
+        font-weight: $default;
+        color: $lightGray;
+    }
+}
+
+.cta {
+    &__button {
+        width: 100%;
+        background-color: $brightYellow;
+        padding: toRem(15);
+
+        border-radius: toRem(5);
+        box-shadow: 0 10px 10px $darkCyan;
+    }
+}
