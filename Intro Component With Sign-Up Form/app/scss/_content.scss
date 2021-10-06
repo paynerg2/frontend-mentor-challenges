@@ -1,4 +1,15 @@
 #content {
     text-align: center;
     margin-top: toRem(75);
+
+    @media (min-width: $mobileWidth) {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: toRem(46);
+        }
+    }
 }
