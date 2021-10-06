@@ -1,0 +1,48 @@
+#cta {
+    .try {
+        height: toRem(90);
+        background: $blue;
+        text-align: center;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        border-radius: $borderRadius;
+
+        box-shadow: 0 7px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    > form > p {
+        font-size: toRem(10);
+        text-align: center;
+        padding: 0 toRem(35);
+    }
+}
+
+#cta__form {
+    margin-top: toRem(20);
+    background-color: $white;
+    border-radius: $borderRadius;
+    padding: 0 toRem(20);
+    padding-bottom: toRem(20);
+    color: $grayishBlue;
+}
+
+.input {
+    width: 100%;
+    line-height: 3;
+    margin-top: toRem(20);
+    border: solid 1px rgba(100, 100, 100, 0.2);
+    border-radius: toRem(5);
+    padding-left: toRem(10);
+
+    &::placeholder {
+        font-weight: $semiBold;
+    }
+
+    &.button {
+        background-color: $green;
+        color: $white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
