@@ -15,4 +15,13 @@
 
     border-radius: $componentBorderRadius;
     overflow: hidden;
+
+    @media (min-width: $mobileWidth) {
+        width: toRem(640);
+
+        display: grid;
+        grid-template-areas: 'heading heading' 'cta features';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }

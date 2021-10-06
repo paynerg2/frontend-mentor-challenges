@@ -1,6 +1,9 @@
 #heading {
     background-color: $white;
     padding: $padding;
+
+    grid-area: heading;
+
     h2 {
         color: $brightYellow;
         font-size: toRem(18);
@@ -8,5 +11,9 @@
 
     p {
         line-height: 2;
+    }
+
+    @media (min-width: $mobileWidth) {
+        padding: $paddingDesktop;
     }
 }

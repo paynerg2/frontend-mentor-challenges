@@ -88,9 +88,23 @@ input[type='reset'] {
   overflow: hidden;
 }
 
+@media (min-width: 23.4375rem) {
+  .layout {
+    width: 40rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'heading heading' 'cta features';
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 #heading {
   background-color: #fff;
   padding: 1.5625rem;
+  grid-area: heading;
 }
 
 #heading h2 {
@@ -102,10 +116,17 @@ input[type='reset'] {
   line-height: 2;
 }
 
+@media (min-width: 23.4375rem) {
+  #heading {
+    padding: 2.5rem;
+  }
+}
+
 #cta {
   color: #fff;
   background-color: #2ab2af;
   padding: 1.5625rem;
+  grid-area: cta;
 }
 
 #cta h2 {
@@ -125,6 +146,12 @@ input[type='reset'] {
   margin-right: 0.3125rem;
 }
 
+@media (min-width: 23.4375rem) {
+  #cta {
+    padding: 2.5rem;
+  }
+}
+
 .cta__button {
   width: 100%;
   background-color: #c0df34;
@@ -138,12 +165,19 @@ input[type='reset'] {
   background-color: #3dd1cf;
   color: #e5eff5;
   padding: 1.5625rem;
+  grid-area: features;
 }
 
 #features h2 {
   color: #fff;
   margin: 0;
   margin-bottom: 0.625rem;
+}
+
+@media (min-width: 23.4375rem) {
+  #features {
+    padding: 2.5rem;
+  }
 }
 
 .features__list {

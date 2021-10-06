@@ -4,10 +4,16 @@
 
     padding: $padding;
 
+    grid-area: features;
+
     h2 {
         color: $white;
         margin: 0;
         margin-bottom: toRem(10);
+    }
+
+    @media (min-width: $mobileWidth) {
+        padding: $paddingDesktop;
     }
 }
 
