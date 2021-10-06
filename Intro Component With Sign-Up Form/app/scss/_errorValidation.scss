@@ -1,0 +1,17 @@
+.hidden {
+    display: none;
+}
+
+.icon-error {
+    height: toRem(20);
+    width: toRem(20);
+    margin: auto 0;
+    margin-right: toRem(10);
+}
+
+span.error {
+    color: $red;
+    font-size: toRem(10);
+    font-style: italic;
+    float: right;
+}

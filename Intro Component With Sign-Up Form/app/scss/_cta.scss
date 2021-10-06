@@ -30,26 +30,48 @@
     color: $grayishBlue;
 
     box-shadow: $boxShadow;
+
+    @media (min-width: $mobileWidth) {
+        padding: toRem(20);
+    }
 }
 
 .input {
-    width: 100%;
-    line-height: 3;
-    margin-top: toRem(20);
+    display: flex;
+    flex-direction: row;
+
     border: solid 1px rgba(100, 100, 100, 0.2);
     border-radius: toRem(5);
-    padding-left: toRem(10);
+    margin-top: toRem(20);
 
-    &::placeholder {
-        font-weight: $semiBold;
+    &__field {
+        flex-grow: 2;
+        width: 100%;
+        line-height: 3;
+
+        padding-left: toRem(10);
+        border: none;
+
+        &::placeholder {
+            font-weight: $semiBold;
+        }
+
+        &.button {
+            background-color: $green;
+            color: $white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: toRem(20);
+
+            box-shadow: 0 4px 2px hsl(154, 59%, 40%);
+        }
     }
 
-    &.button {
-        background-color: $green;
-        color: $white;
-        text-transform: uppercase;
-        cursor: pointer;
+    &.error {
+        border: solid 2px $red;
 
-        box-shadow: 0 4px 2px hsl(154, 59%, 40%);
+        .input__field::placeholder {
+            color: $red;
+        }
     }
 }

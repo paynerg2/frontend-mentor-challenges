@@ -52,7 +52,6 @@ h1 {
 
 /* Remove default button styles */
 button,
-input[type='submit'],
 input[type='reset'] {
   cursor: pointer;
   background: none;
@@ -81,6 +80,13 @@ input[type='reset'] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 23.4375rem) {
+  #container {
+    background: url("/images/bg-intro-desktop.png");
+    background-color: #ff7a7a;
+  }
 }
 
 .layout {
@@ -174,37 +180,96 @@ input[type='reset'] {
           box-shadow: 0 7px 2px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 23.4375rem) {
+  #cta__form {
+    padding: 1.25rem;
+  }
+}
+
 .input {
-  width: 100%;
-  line-height: 3;
-  margin-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border: solid 1px rgba(100, 100, 100, 0.2);
   border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+}
+
+.input__field {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 100%;
+  line-height: 3;
   padding-left: 0.625rem;
+  border: none;
 }
 
-.input::-webkit-input-placeholder {
+.input__field::-webkit-input-placeholder {
   font-weight: 600;
 }
 
-.input:-ms-input-placeholder {
+.input__field:-ms-input-placeholder {
   font-weight: 600;
 }
 
-.input::-ms-input-placeholder {
+.input__field::-ms-input-placeholder {
   font-weight: 600;
 }
 
-.input::placeholder {
+.input__field::placeholder {
   font-weight: 600;
 }
 
-.input.button {
+.input__field.button {
   background-color: #38cc8c;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 1.25rem;
   -webkit-box-shadow: 0 4px 2px #2aa26e;
           box-shadow: 0 4px 2px #2aa26e;
+}
+
+.input.error {
+  border: solid 2px #ff7a7a;
+}
+
+.input.error .input__field::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.input.error .input__field:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.input.error .input__field::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.input.error .input__field::placeholder {
+  color: #ff7a7a;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon-error {
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: auto 0;
+  margin-right: 0.625rem;
+}
+
+span.error {
+  color: #ff7a7a;
+  font-size: 0.625rem;
+  font-style: italic;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
