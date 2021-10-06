@@ -1,0 +1,42 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 16;
+$primaryFont: 'Poppins', sans-serif;
+
+/* Font Weights */
+$default: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+
+// Primary
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+// Accent
+$blue: hsl(248, 32%, 49%);
+
+// Neutral
+$white: #fff;
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);

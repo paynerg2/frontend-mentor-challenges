@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/dist/style.css" />
+
+        <title>Frontend Mentor | Intro Component With Sign-Up Form</title>
+    </head>
+    <body>
+        <main id="container">
+            <div class="layout">
+                <section id="content">
+                    <h1>Learn to code by watching others</h1>
+                    <p>
+                        See how experienced developers solve problems in real-time. Watching
+                        scripted tutorials is great, but understanding how developers think is
+                        invaluable.
+                    </p>
+                </section>
+                <section id="cta">
+                    <p><strong>Try it free 7 days then $20/mo.</strong> thereafter</p>
+                    <form id="cta__form">
+                        <input
+                            class="cta__form__input"
+                            type="text"
+                            placeholder="First Name"
+                            name="First Name"
+                            id="firstName"
+                        />
+                        <span class="error-message"></span>
+                        <input
+                            class="cta__form__input"
+                            type="text"
+                            placeholder="Last Name"
+                            name="Last Name"
+                            id="lastName"
+                        />
+                        <span class="error-message"></span>
+                        <input
+                            class="cta__form__input"
+                            type="email"
+                            placeholder="Email Address"
+                            name="Email"
+                            id="email"
+                        />
+                        <span class="error-message"></span>
+                        <input
+                            class="cta__form__input"
+                            type="password"
+                            placeholder="Password"
+                            name="Password"
+                            id="password"
+                        />
+                        <span class="error-message"></span>
+                        <input
+                            class="cta__form__input"
+                            type="button"
+                            value="claim your free trial"
+                        />
+                        <span class="error-message"></span>
+                        <p>
+                            By clicking the button, you are agreeing to our
+                            <a href="#">Terms and Services</a>
+                        </p>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <script src="/app/js/script.js"></script>
+</html>
