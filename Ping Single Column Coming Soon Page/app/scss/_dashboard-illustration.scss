@@ -3,5 +3,10 @@
     img {
         height: toRem(190);
         width: toRem(320);
+
+        @media (min-width: $mobileWidth) {
+            height: auto;
+            width: 100%;
+        }
     }
 }

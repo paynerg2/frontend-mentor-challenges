@@ -8,4 +8,8 @@
 
 .layout {
     padding: toRem(28);
+
+    @media (min-width: $mobileWidth) {
+        width: toRem(650);
+    }
 }
