@@ -1,0 +1,41 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 20;
+$primaryFont: 'Libre Franklin', sans-serif;
+
+/* Font Weights */
+$light: 300;
+$semiBold: 600;
+$bold: 700;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+$white: #fff;
+
+// Primary
+$blue: hsl(223, 87%, 63%);
+
+// Secondary
+$paleBlue: hsl(223, 100%, 88%);
+$lightRed: hsl(354, 100%, 66%);
+
+// Neutral
+$gray: hsl(0, 0%, 59%);
+$veryDarkBlue: hsl(209, 33%, 12%);
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);

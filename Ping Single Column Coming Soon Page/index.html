@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/dist/style.css" />
+
+        <title>Frontend Mentor | Challenge Title</title>
+    </head>
+    <body>
+        <main id="container">
+            <div class="layout">
+                <section id="logo">
+                    <img aria-hidden="true" src="/images/logo.svg" alt="Ping Logo" />
+                </section>
+                <section id="content">
+                    <h1>We are launching <strong>soon!</strong></h1>
+                    <p>Subscribe and get notified</p>
+                    <form>
+                        <input type="text" id="email" placeholder="Your email address..." />
+                        <div class="error-message"></div>
+                        <button type="submit">Notify Me</button>
+                    </form>
+                </section>
+                <section id="dashboard-illustration">
+                    <img
+                        aria-hidden="true"
+                        src="/images/illustration-dashboard.png"
+                        alt="Dashboard Illustration"
+                    />
+                </section>
+                <section id="socials">
+                    <div class="socials__icons">
+                        <img src="/images/facebook-f-brands.svg" alt="Facebook" />
+                        <img src="/images/twitter-brands.svg" alt="Twitter" />
+                        <img src="/images/instagram-brands.svg" alt="Instagram" />
+                    </div>
+                    <footer>&copy; Copyright Ping. All rights reserved.</footer>
+                </section>
+            </div>
+        </main>
+    </body>
+    <script src="/app/js/script.js"></script>
+</html>
