@@ -1,0 +1,37 @@
+#socials {
+    margin-top: toRem(110);
+    text-align: center;
+
+    footer {
+        margin-top: toRem(30);
+        font-size: toRem(12);
+        color: $gray;
+    }
+}
+
+.socials {
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: toRem(10);
+
+        img {
+            height: 50%;
+            width: 50%;
+            filter: invert(42%) sepia(93%) saturate(1860%) hue-rotate(207deg) brightness(96%)
+                contrast(98%);
+        }
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: toRem(30);
+    width: toRem(30);
+    border-radius: 100%;
+    border: solid 1px $paleBlue;
+}
