@@ -63,23 +63,73 @@ input[type='reset'] {
 }
 
 #container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: url("/images/bg-mobile.svg") no-repeat;
   background-size: 100%;
   background-color: #674baf;
 }
 
+@media (min-width: 50rem) {
+  #container {
+    background: url("/images/bg-desktop.svg") no-repeat;
+    background-size: cover;
+    background-color: #674baf;
+  }
+}
+
 .layout {
   padding: 2.75rem;
 }
 
+@media (min-width: 50rem) {
+  .layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .layout #logo {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+  .layout .main_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+  .layout .content {
+    text-align: left;
+    margin: 1.875rem;
+  }
+  .layout .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 #logo img {
   width: 40%;
+  max-width: 13.125rem;
 }
 
 #hero img {
   width: 100%;
+  min-width: 17.5rem;
   margin-top: 3.4375rem;
   margin-bottom: 3.4375rem;
 }
@@ -95,17 +145,28 @@ input[type='reset'] {
 
 .content__button {
   width: 80%;
+  max-width: 12.5rem;
   color: #674baf;
   background-color: #fff;
   padding: 0.9375rem;
   border-radius: 2.5rem;
-  -webkit-box-shadow: 0 5px 5px #523c8b;
-          box-shadow: 0 5px 5px #523c8b;
+  -webkit-box-shadow: 0.4375rem 0.4375rem 0.4375rem #523c8b;
+          box-shadow: 0.4375rem 0.4375rem 0.4375rem #523c8b;
 }
 
 .content__button:hover {
   background-color: #e882e8;
   color: #fff;
+}
+
+@media (min-width: 50rem) {
+  .content__header {
+    font-size: 2.8125rem;
+  }
+  .content__button {
+    font-size: 16;
+    margin-top: 0.625rem;
+  }
 }
 
 .socials {

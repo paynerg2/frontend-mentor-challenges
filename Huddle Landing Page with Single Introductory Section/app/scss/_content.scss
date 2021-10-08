@@ -8,15 +8,27 @@
 
     &__button {
         width: 80%;
+        max-width: toRem(200);
         color: $violet;
         background-color: $white;
         padding: toRem(15);
         border-radius: toRem(40);
-        box-shadow: 0 5px 5px $violetShadow;
+        box-shadow: toRem(7) toRem(7) toRem(7) $violetShadow;
 
         &:hover {
             background-color: $softMagenta;
             color: $white;
+        }
+    }
+
+    @media (min-width: $mobileWidth) {
+        &__header {
+            font-size: toRem(45);
+        }
+
+        &__button {
+            font-size: $fontSize;
+            margin-top: toRem(10);
         }
     }
 }

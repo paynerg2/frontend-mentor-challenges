@@ -1,6 +1,7 @@
 #hero {
     img {
         width: 100%;
+        min-width: toRem(280);
         margin-top: toRem(55);
         margin-bottom: toRem(55);
     }
