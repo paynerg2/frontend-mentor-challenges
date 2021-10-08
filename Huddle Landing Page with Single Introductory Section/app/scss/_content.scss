@@ -1,0 +1,22 @@
+.content {
+    text-align: center;
+    margin-bottom: toRem(80);
+
+    &__header {
+        text-transform: capitalize;
+    }
+
+    &__button {
+        width: 80%;
+        color: $violet;
+        background-color: $white;
+        padding: toRem(15);
+        border-radius: toRem(40);
+        box-shadow: 0 5px 5px $violetShadow;
+
+        &:hover {
+            background-color: $softMagenta;
+            color: $white;
+        }
+    }
+}

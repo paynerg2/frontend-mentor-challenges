@@ -1,0 +1,44 @@
+@import 'functions';
+
+/* 
+ *----------------------
+ *       Typography
+ *----------------------
+ */
+$fontSize: 16;
+$primaryFont: 'Open Sans', sans-serif;
+$headingFont: 'Poppins', sans-serif;
+
+/* Font Weights */
+$default: 400;
+$semiBold: 600;
+
+/* 
+ *----------------------
+ *       Colors
+ *----------------------
+ */
+
+// Primary
+$violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+
+// Shadows
+$violetShadow: hsl(257, 40%, 39%);
+
+$white: #fff;
+
+// Filters
+$whiteFilter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%)
+    contrast(101%);
+$softMagentaFilter: invert(82%) sepia(39%) saturate(2062%) hue-rotate(240deg) brightness(91%)
+    contrast(100%);
+
+/* 
+ *----------------------
+ *       Structure
+ *----------------------
+ */
+
+$mobileWidth: toRem(375);
+$desktopWidth: toRem(1440);

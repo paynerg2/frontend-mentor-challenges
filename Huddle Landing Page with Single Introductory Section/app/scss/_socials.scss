@@ -1,0 +1,32 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: toRem(10);
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: toRem(30);
+        width: toRem(30);
+        border: 1px solid $white;
+        border-radius: 100%;
+
+        img {
+            height: 50%;
+            width: 50%;
+
+            filter: $whiteFilter;
+        }
+
+        &:hover {
+            border-color: $softMagenta;
+
+            img {
+                filter: $softMagentaFilter;
+            }
+        }
+    }
+}
