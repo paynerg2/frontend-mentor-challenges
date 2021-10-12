@@ -1,0 +1,21 @@
+#container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $white;
+}
+
+.layout {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}

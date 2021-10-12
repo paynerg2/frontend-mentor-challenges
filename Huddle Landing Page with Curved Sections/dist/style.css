@@ -64,4 +64,286 @@ input[type='reset'] {
   cursor: pointer;
   outline: inherit;
 }
+
+input:focus {
+  outline: none;
+}
+
+/* Credit: Engage Interactive (https://engageinteractive.co.uk/blog/top-10-scss-mixins) */
+#container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.layout {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.25rem;
+  padding: 1.875rem;
+}
+
+.header__logo {
+  height: 1.5rem;
+  width: auto;
+}
+
+.header__button {
+  padding: 0.3125rem 1.875rem;
+  border: solid 1px #ff52bf;
+  border-radius: 2.5rem;
+  color: #ff52bf;
+}
+
+.cta {
+  text-align: center;
+  padding: 1.875rem;
+}
+
+.cta__button {
+  padding: 0.625rem 3.125rem;
+  background-color: #ff52bf;
+  border-radius: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.cta__illustration {
+  margin: 6.25rem 0;
+}
+
+#cta-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20rem;
+  padding: 1.875rem;
+}
+
+#cta-2 h2 {
+  text-align: center;
+}
+
+#statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.statistic {
+  margin: 4.375rem 0;
+}
+
+.statistic__amount {
+  font-size: 3.75rem;
+  margin: 0rem;
+}
+
+.statistic p {
+  text-align: center;
+}
+
+.statistic__icon {
+  text-align: left;
+}
+
+.content {
+  text-align: center;
+  margin: 10.9375rem 0;
+  padding: 1.875rem;
+}
+
+#grow-together {
+  background-color: #f5faff;
+}
+
+#your-users {
+  background-color: #f5faff;
+}
+
+.footer {
+  background-color: #00252e;
+  color: #f5faff;
+  padding: 1.875rem;
+}
+
+.footer p {
+  line-height: 1.8em;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("/images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -200px;
+  left: 0;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.subscribe__input {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: none;
+}
+
+.subscribe__button {
+  width: 50%;
+  padding: 0.625rem;
+  background-color: #ff52bf;
+  border-radius: 0.3125rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer-left address {
+  font-style: normal;
+  font-size: 0.9rem;
+  padding-left: 2.5rem;
+}
+
+.footer-left div {
+  margin: 1.875rem 0;
+}
+
+.footer-left__logo {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+  margin-top: 6.25rem;
+}
+
+.footer-left__phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1.875rem;
+  background: url("/images/icon-phone.svg") no-repeat;
+  height: 2.25rem;
+  width: 2.25rem;
+  color: #fff;
+}
+
+.footer-left__email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1.875rem;
+  background: url("/images/icon-email.svg") no-repeat;
+  height: 2.25rem;
+  width: 2.25rem;
+  color: #fff;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+
+.icons > div {
+  border: 1px solid black;
+  height: 1.875rem;
+  width: 1.875rem;
+  background-color: #f5faff;
+}
+
+.icons > .inverse {
+  background-color: #00252e;
+}
+
+.icons__fb {
+  height: 80%;
+  width: auto;
+  position: relative;
+  margin-left: 0.625rem;
+  margin-top: 0.125rem;
+}
+
+.icons__twitter {
+  height: 80%;
+  width: auto;
+  margin-left: 0.125rem;
+  margin-top: 0.125rem;
+}
+
+.icons__insta {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+}
 /*# sourceMappingURL=style.css.map */

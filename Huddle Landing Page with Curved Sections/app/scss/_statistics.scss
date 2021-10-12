@@ -1,0 +1,23 @@
+#statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic {
+    &__amount {
+        font-size: toRem(60);
+        margin: toRem(0);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    &__icon {
+        text-align: left;
+    }
+
+    margin: toRem(70) 0;
+}

@@ -49,3 +49,7 @@ input[type='reset'] {
     cursor: pointer;
     outline: inherit;
 }
+
+input:focus {
+    outline: none;
+}

@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: toRem(100);
+    padding: $padding;
+
+    &__logo {
+        height: toRem(24);
+        width: auto;
+    }
+
+    &__button {
+        padding: toRem(5) toRem(30);
+        border: solid 1px $pink;
+        border-radius: toRem(40);
+
+        color: $pink;
+    }
+}

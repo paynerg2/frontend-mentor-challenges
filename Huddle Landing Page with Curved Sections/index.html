@@ -16,18 +16,18 @@
 
         <title>Frontend Mentor | Huddle Landing Page with Curved Sections</title>
     </head>
-    <body>
-        <main id="container">
-            <div class="layout">
-                <header class="header">
-                    <img src="/images/logo.svg" alt="Huddle Logo" />
-                    <button class="header__button">Try it Free</button>
-                </header>
+    <body id="container">
+        <div class="layout">
+            <header class="header">
+                <img class="header__logo" src="/images/logo.svg" alt="Huddle Logo" />
+                <button class="header__button">Try it Free</button>
+            </header>
 
+            <main id="content">
                 <!-- -------------------- -->
                 <!--        CTA           -->
                 <!-- -------------------- -->
-                <section id="cta">
+                <section id="main-cta" class="cta">
                     <h1>Build The Community Your Fans Will Love</h1>
                     <p>
                         Huddle re-imagines the way we build communities. You have a voice, but so
@@ -35,7 +35,12 @@
                         genuine discussion.
                     </p>
                     <button class="cta__button">Get Started For Free</button>
-                    <img aria-hidden="true" src="/images/screen-mockups.svg" alt="Screen Mockups" />
+                    <img
+                        class="cta__illustration responsive"
+                        aria-hidden="true"
+                        src="/images/screen-mockups.svg"
+                        alt="Screen Mockups"
+                    />
                 </section>
 
                 <!-- -------------------- -->
@@ -43,14 +48,24 @@
                 <!-- -------------------- -->
                 <section id="statistics">
                     <div class="statistic">
-                        <img aria-hidden="true" src="/images/icon-communities.svg" alt="" />
-                        <h2>1.4k+</h2>
+                        <img
+                            class="statistic__icon"
+                            aria-hidden="true"
+                            src="/images/icon-communities.svg"
+                            alt=""
+                        />
+                        <p class="statistic__amount"><strong>1.4k+</strong></p>
                         <p>Communities Formed</p>
                     </div>
 
                     <div class="statistic">
-                        <img aria-hidden="true" src="/images/icon-messages.svg" alt="" />
-                        <h2>2.7m+</h2>
+                        <img
+                            class="statistic__icon"
+                            aria-hidden="true"
+                            src="/images/icon-messages.svg"
+                            alt=""
+                        />
+                        <p class="statistic__amount"><strong>2.7m+</strong></p>
                         <p>Messages Sent</p>
                     </div>
                 </section>
@@ -58,8 +73,9 @@
                 <!-- -------------------- -->
                 <!--     Grow Together    -->
                 <!-- -------------------- -->
-                <section id="grow-together">
+                <section id="grow-together" class="content">
                     <img
+                        class="responsive"
                         aria-hidden="true"
                         src="/images/illustration-grow-together.svg"
                         alt="Grow Together"
@@ -75,8 +91,9 @@
                 <!-- --------------------- -->
                 <!-- Flowing Conversations -->
                 <!-- --------------------- -->
-                <section id="flowing-conversations">
+                <section id="flowing-conversations" class="content">
                     <img
+                        class="responsive"
                         aria-hidden="true"
                         src="/images/illustration-flowing-conversation.svg"
                         alt="Flowing Conversations"
@@ -91,8 +108,9 @@
                 <!-- -------------------- -->
                 <!--     Your Users       -->
                 <!-- -------------------- -->
-                <section id="Your Users">
+                <section id="your-users" class="content">
                     <img
+                        class="responsive"
                         aria-hidden="true"
                         src="/images/illustration-your-users.svg"
                         alt="Your Users"
@@ -112,47 +130,44 @@
                     <h2>Ready To Build Your Community?</h2>
                     <button class="cta__button">Get Started For Free</button>
                 </section>
+            </main>
 
-                <!-- -------------------- -->
-                <!--        Footer        -->
-                <!-- -------------------- -->
-                <footer class="footer">
-                    <div class="footer--right">
-                        <h3>Newsletter</h3>
-                        <p>
-                            To recieve tips on how to grow your community, sign up to our weekly
-                            newsletter. Weâ€™ll never send you spam or pass on your email address
-                        </p>
-                        <form class="subscribe" action="submit">
-                            <div>
-                                <input
-                                    class="subscribe__input"
-                                    type="text"
-                                    name="email"
-                                    id="email"
-                                />
-                                <span class="subscribe__error-message"></span>
-                            </div>
-                            <button class="subscribe__button" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                    <div class="footer-left">
-                        <img src="/images/logo.svg" alt="Huddle Logo" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-                            quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-                        </p>
+            <!-- -------------------- -->
+            <!--        Footer        -->
+            <!-- -------------------- -->
+            <footer class="footer">
+                <div class="footer--right">
+                    <h3>Newsletter</h3>
+                    <p>
+                        To recieve tips on how to grow your community, sign up to our weekly
+                        newsletter. We'll never send you spam or pass on your email address
+                    </p>
+                    <form class="subscribe" action="submit">
+                        <div>
+                            <input class="subscribe__input" type="text" name="email" id="email" />
+                            <span class="subscribe__error-message"></span>
+                        </div>
+                        <button class="subscribe__button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-left">
+                    <img class="footer-left__logo" src="/images/logo.svg" alt="Huddle Logo" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam,
+                        hendrerit lacinia vestibulum a, ultrices quis sem.
+                    </p>
+                    <address>
                         <div class="footer-left__phone">Phone: +1-543-123-4567</div>
                         <div class="footer-left__email">example@huddle.com</div>
+                    </address>
 
-                        <div class="footer__icons">
-                            <div class="icon">FB</div>
-                            <div class="icon">Insta</div>
-                            <div class="icon">Twit</div>
-                        </div>
+                    <div class="icons">
+                        <div><img src="/images/facebook-f-brands.svg" class="icons__fb"></img></div>
+                        <div class="inverse"><img src="/images/instagram-brands.svg" class="icons__insta"></img></div>
+                        <div><img src="/images/twitter-brands.svg" class="icons__twitter"></img></div>
                     </div>
-                </footer>
-            </div>
-        </main>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

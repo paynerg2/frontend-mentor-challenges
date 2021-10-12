@@ -1,0 +1,30 @@
+.cta {
+    text-align: center;
+    padding: $padding;
+
+    &__button {
+        padding: toRem(10) toRem(50);
+        background-color: $pink;
+        border-radius: toRem(40);
+
+        color: $white;
+        font-weight: $semiBold;
+    }
+
+    &__illustration {
+        margin: toRem(100) 0;
+    }
+}
+
+#cta-2 {
+    h2 {
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: toRem(320);
+    padding: $padding;
+}
