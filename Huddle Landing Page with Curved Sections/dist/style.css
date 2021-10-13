@@ -212,16 +212,63 @@ input:focus {
 
 #grow-together {
   background-color: #f5faff;
+  position: relative;
+}
+
+#grow-together::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/images/bg-section-top-mobile-1.svg") no-repeat;
+  height: 6.25rem;
+  width: 100%;
+  top: -6.25rem;
+  left: 0;
+}
+
+#grow-together::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/images/bg-section-bottom-mobile-1.svg") no-repeat;
+  height: 6.25rem;
+  width: 100%;
+  bottom: -6.25rem;
+  left: 0;
 }
 
 #your-users {
   background-color: #f5faff;
+  position: relative;
+}
+
+#your-users::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/images/bg-section-top-mobile-2.svg") no-repeat;
+  height: 6.25rem;
+  width: 100%;
+  top: -6.25rem;
+  left: 0;
+}
+
+#your-users::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/images/bg-section-bottom-mobile-2.svg") no-repeat;
+  height: 6.25rem;
+  width: 100%;
+  bottom: -6.25rem;
+  left: 0;
 }
 
 .footer {
   background-color: #00252e;
   color: #f5faff;
   padding: 1.875rem;
+  position: relative;
 }
 
 .footer p {
@@ -234,8 +281,9 @@ input:focus {
   position: absolute;
   background-image: url("/images/bg-footer-top-mobile.svg");
   background-repeat: no-repeat;
-  position: relative;
-  top: -200px;
+  width: 100%;
+  height: 6.25rem;
+  top: -3.125rem;
   left: 0;
 }
 

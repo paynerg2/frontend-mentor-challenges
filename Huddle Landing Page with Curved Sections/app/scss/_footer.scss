@@ -4,6 +4,7 @@ $formBorderRadius: toRem(5);
     background-color: $veryDarkCyan;
     color: $veryPaleBlue;
     padding: $padding;
+    position: relative;
 
     p {
         line-height: 1.8em;
@@ -13,8 +14,9 @@ $formBorderRadius: toRem(5);
         @include pseudo;
         background-image: url('/images/bg-footer-top-mobile.svg');
         background-repeat: no-repeat;
-        position: relative;
-        top: -200px;
+        width: 100%;
+        height: toRem(100);
+        top: toRem(-50);
         left: 0;
     }
 }

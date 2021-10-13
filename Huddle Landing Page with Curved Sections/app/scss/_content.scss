@@ -6,8 +6,46 @@
 
 #grow-together {
     background-color: $veryPaleBlue;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        background: url('/images/bg-section-top-mobile-1.svg') no-repeat;
+        height: toRem(100);
+        width: 100%;
+        top: toRem(-100);
+        left: 0;
+    }
+
+    &::after {
+        @include pseudo;
+        background: url('/images/bg-section-bottom-mobile-1.svg') no-repeat;
+        height: toRem(100);
+        width: 100%;
+        bottom: toRem(-100);
+        left: 0;
+    }
 }
 
 #your-users {
     background-color: $veryPaleBlue;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        background: url('/images/bg-section-top-mobile-2.svg') no-repeat;
+        height: toRem(100);
+        width: 100%;
+        top: toRem(-100);
+        left: 0;
+    }
+
+    &::after {
+        @include pseudo;
+        background: url('/images/bg-section-bottom-mobile-2.svg') no-repeat;
+        height: toRem(100);
+        width: 100%;
+        bottom: toRem(-100);
+        left: 0;
+    }
 }
