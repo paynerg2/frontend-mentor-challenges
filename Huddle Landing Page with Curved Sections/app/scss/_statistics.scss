@@ -3,6 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: toRem(1000);
+        margin: 0 auto;
+    }
 }
 
 .statistic {

@@ -2,6 +2,24 @@
     text-align: center;
     margin: toRem(175) 0;
     padding: $padding;
+
+    @media (min-width: $mobileWidth) {
+        &__text {
+            display: flex;
+            max-width: 45%;
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            margin: 0 toRem(60);
+            text-align: left;
+
+            h2 {
+                font-size: toRem(40);
+            }
+        }
+    }
 }
 
 #grow-together {
@@ -15,6 +33,13 @@
         width: 100%;
         top: toRem(-100);
         left: 0;
+
+        @media (min-width: $mobileWidth) {
+            background: url('/images/bg-section-top-desktop-1.svg') no-repeat;
+            background-size: cover;
+            top: toRem(-200);
+            height: toRem(200);
+        }
     }
 
     &::after {
@@ -24,6 +49,24 @@
         width: 100%;
         bottom: toRem(-100);
         left: 0;
+
+        @media (min-width: $mobileWidth) {
+            background: url('/images/bg-section-bottom-desktop-1.svg') no-repeat;
+            background-size: cover;
+            bottom: toRem(-200);
+            height: toRem(200);
+        }
+    }
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 10%;
+        padding: $paddingDesktop;
+
+        img {
+            max-width: 45%;
+        }
     }
 }
 
@@ -38,6 +81,13 @@
         width: 100%;
         top: toRem(-100);
         left: 0;
+
+        @media (min-width: $mobileWidth) {
+            background: url('/images/bg-section-top-desktop-2.svg') no-repeat;
+            background-size: cover;
+            top: toRem(-200);
+            height: toRem(200);
+        }
     }
 
     &::after {
@@ -47,5 +97,36 @@
         width: 100%;
         bottom: toRem(-100);
         left: 0;
+
+        @media (min-width: $mobileWidth) {
+            background: url('/images/bg-section-bottom-desktop-2.svg') no-repeat;
+            background-size: cover;
+            bottom: toRem(-200);
+            height: toRem(200);
+        }
+    }
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10%;
+        padding: $paddingDesktop;
+
+        img {
+            max-width: 45%;
+        }
+    }
+}
+
+#flowing-conversations {
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 10%;
+        padding: $paddingDesktop;
+
+        img {
+            max-width: 45%;
+        }
     }
 }

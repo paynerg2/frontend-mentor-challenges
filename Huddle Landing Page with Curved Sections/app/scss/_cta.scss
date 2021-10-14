@@ -1,4 +1,6 @@
 .cta {
+    $ctaMaxWidth: toRem(900);
+
     text-align: center;
     padding: $padding;
 
@@ -6,6 +8,7 @@
         padding: toRem(10) toRem(50);
         background-color: $pink;
         border-radius: toRem(40);
+        box-shadow: 0 toRem(5) toRem(5) rgba(0, 0, 0, 0.15);
 
         color: $white;
         font-weight: $semiBold;
@@ -13,6 +16,30 @@
 
     &__illustration {
         margin: toRem(100) 0;
+    }
+
+    @media (min-width: $mobileWidth) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: toRem(44);
+        }
+
+        p {
+            max-width: toRem(430);
+            margin: 0 auto;
+        }
+
+        &__button {
+            margin-top: toRem(30);
+            padding: toRem(20) toRem(50);
+        }
+
+        &__illustration {
+            max-width: $ctaMaxWidth;
+        }
     }
 }
 

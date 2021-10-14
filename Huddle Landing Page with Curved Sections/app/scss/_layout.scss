@@ -11,8 +11,14 @@
 
 .layout {
     width: auto;
+    min-width: toRem(375);
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $mobileWidth) {
+        width: 100vw;
+        min-height: 100%;
+    }
 }
 
 .responsive {

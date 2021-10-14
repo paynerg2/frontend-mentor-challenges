@@ -17,4 +17,8 @@
 
         color: $pink;
     }
+
+    @media (min-width: $mobileWidth) {
+        padding: $paddingDesktop;
+    }
 }
