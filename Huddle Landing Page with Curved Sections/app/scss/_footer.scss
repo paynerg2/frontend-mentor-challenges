@@ -65,6 +65,9 @@ $formBorderRadius: toRem(5);
     @media (min-width: $mobileWidth) {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
         column-gap: toRem(40);
 
         &__input {
